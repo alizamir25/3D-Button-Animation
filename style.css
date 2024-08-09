@@ -3,13 +3,13 @@
     padding: 0;
     box-sizing: border-box;
   }
-  body {
+  body{
     height: 90vh;
     display: grid;
     place-content: center;
     background-color: rgb(53, 64, 73);
   }
-  .button {
+  .button{
     --white: #b6c7e6;
     --blue-100: #9db6fc;
     --blue-200: #709dff;
@@ -17,7 +17,6 @@
     --blue-400: #267ee2;
     --blue-500: #2b4083;
     --radius: 18px;
-  
     border-radius: var(--radius);
     outline: none;
     cursor: pointer;
@@ -31,21 +30,21 @@
     height: 80px;
     transform: rotate(353deg) skewX(4deg);
   }
-  .bg {
+  .bg{
     position: absolute;
     inset: 0;
     border-radius: inherit;
     filter: blur(1px);
   }
   .bg::before,
-  .bg::after {
+  .bg::after{
     content: "";
     position: absolute;
     inset: 0;
     border-radius: calc(var(--radius) * 1.1);
     background: var(--blue-500);
   }
-  .bg::before {
+  .bg::before{
     filter: blur(5px);
     transition: all 0.3s ease;
     box-shadow:
@@ -57,7 +56,7 @@
       -42px 36px 16px 0 rgba(75, 112, 155, 0.08),
       -56px 42px 20px 0 rgba(75, 96, 155, 0.05);
   }
-  .wrap {
+  .wrap{
     border-radius: inherit;
     overflow: hidden;
     height: 100%;
@@ -71,7 +70,7 @@
     position: relative;
     transition: all 0.3s ease;
   }
-  .outline {
+  .outline{
     position: absolute;
     overflow: hidden;
     inset: 0;
@@ -80,7 +79,7 @@
     border-radius: inherit;
     transition: all 0.4s ease;
   }
-  .outline::before {
+  .outline::before{
     content: "";
     position: absolute;
     inset: 2px;
@@ -96,7 +95,7 @@
     animation: spin 3s linear infinite;
     animation-play-state: paused;
   }
-  .content {
+  .content{
     pointer-events: none;
     display: flex;
     align-items: center;
